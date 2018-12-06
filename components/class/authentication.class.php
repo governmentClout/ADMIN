@@ -1,0 +1,4 @@
+<?php 
+
+
+/*Authenticate administrator here*/
