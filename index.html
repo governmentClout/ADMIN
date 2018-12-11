@@ -22,7 +22,127 @@
 </head>
 
 <body>
-	<h1>Homepage</h1>
+  <nav class="g-navbar">
+      <div class="container d-flex justify-content-between">
+          <img src="./assets/logo.svg" alt="gclout branding" class="g-nav-brand">
+          <div class="g-nav-menu d-flex justify-content-between">
+              <div class="input-group blue">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="material-icons">search</i></span>
+                </div>
+                <input type="text" class="form-control" required placeholder="Type to search">
+              </div>
+              <ul class="g-nav-menu-list">
+                <li class="g-nav-menu-item">
+                  <i class="material-icons">
+                    notifications
+                  </i>
+                </li>
+                <li class="g-nav-menu-item">
+                    <div class="dropdown">
+                      <div class="profile-image-wrapper">
+                        <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" class="profile-image">
+                      </div>
+                        <button class="btn btn-profile dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Account
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                      </div>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="app-wrapper">
+    <aside class="sidebar">
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item active">
+          <a href="index.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Overview
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="index.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Users
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="index.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Political Officers
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="index.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Notifications
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section class="main-app">
+      <h1>Overview</h1>
+      <div class="d-flex text-center justify-content-between">
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <div class="analytics-card">
+              <h2><i class="material-icons">
+                  person_add
+                  </i>5,000</h2>
+              <p>Total Number of users</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <div class="analytics-card blue-border">
+              <h2>
+                <i class="material-icons">
+                  person_add
+                  </i>2,000</h2>
+              <p>Petitions signed</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <div class="analytics-card green">
+              <h2>
+                  <i class="material-icons">
+                    person_add
+                    </i>29</h2>
+              <p>Political office holders</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <div class="analytics-card yellow">
+              <h2><i class="material-icons">
+                  person_add
+                  </i>9,000</h2>
+              <p>Total Number of posts</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer my-auto">
+    <p class="text-center">Copyright © 2018 GClout. All Rights Reserved.</p>
+  </footer>
 </body>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
