@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: #F4F8F9;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.g-navbar {
+    background: #fff;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.auth-wrapper {
+    height: calc(100vh - 50px);
+}
+.auth-header {
+    background: #034D79;
+    color: #fff; 
+}
+.auth-form {
+    background: #F2F2F2;
+    color: #333333;
+    padding: 4em;
+}
+.auth-form .form-control {
+    border-radius: 0;
+    padding: 1.3em;
+}
+.auth-form .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+} 
+.auth-form .input-group .form-control {
+    border-right: none;
+}
+.btn-gclout-blue {
+    background: #27A9F8;
+    color: #fff;
+    border-radius: 0;
+    margin-top: 2em;
+    padding: 0.6em 1em;
+}
+.auth-form .input-group-text {
+    background: #ffffff;
+    border-left: none;
+    border-radius: 0;
+    color: #BDBDBD;
+}
