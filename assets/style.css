@@ -7,6 +7,13 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    color: #333333;
+}
+a,
+a:hover,
+a:visited,
+a:focus {
+    color: #333333;
 }
 input:focus,
 select:focus,
@@ -116,9 +123,10 @@ button:focus {
     border-top: 2px solid #034D79;
     color: #333333;
     padding: 0.5em 0;
+    z-index: 999;
 }
 .sidebar {
-    width: 240px;
+    width: 210px;
     background: #034D79;
     color: #ffffff;
 }
@@ -183,4 +191,73 @@ a:hover {
     font-size: 36px;
     margin-right: 12px;
     align-self: flex-end;
+}
+.active-members-container {
+    border-radius: 4px;
+    border: 1px solid #F0F0F0;
+}
+.active-members-header {
+    border-bottom: 1px solid #F0F0F0;
+    padding: 1em;
+}
+.active-member {
+    padding: 1em;
+    display: flex;
+    border-bottom: 1px solid #F0F0F0;
+    justify-content: space-between;
+}
+.active-member-details {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.active-member-bio {
+    display: flex;
+}
+.active-member-image-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.active-member-image {
+    width: 100%;
+    height: 100%;
+}
+.active-member-bio p {
+    margin-bottom: 0;
+}
+.last-activity {
+    align-self: center;
+}
+.comments-count {
+    align-self: center;
+}
+.comments-count .material-icons {
+    font-size: 14px;
+    text-align: right;
+    width: 50px;
+}
+.dash-card {
+    border-radius: 4px;
+    padding: 1em;
+    display: flex;
+}
+.bg-green {
+    background: #32A636;
+    color: #ffffff;
+}
+.bg-yellow {
+    background: #EDA625;
+    color: #ffffff;
+}
+.dash-card .material-icons {
+    font-size: 41px;
+    align-self: center;
+    padding: 0 0.8em 0 0.2em;
+}
+.dash-card p {
+    margin-bottom: 4px;
 }
