@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="./assets/logo.svg">
+  <meta name="description" content="Governance Clout is a platform for nigerians to give their takes and opinions on their government and how they are governed. It is open for all types of users. GClout gives your direct access to the government officials that you have elected">
+  <meta name="keywords" content="Government, Nigeria, Opinion, GClout">
+  <meta name="author" content="staybusy.ng">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#00B0F0">
+  <meta name="og:title" property="og:title" content="Governance Clout | Coming soon">
+  <meta name="og:description" property="og:title" content="Governance Clout is a social networking site for everyone (starting from Nigerians) to socialize, contribute and give opinions on governance at all levels. It is open for all type of users. GClout gives you direct access to the government officials that you have elected.">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>GClout | Admin</title>
+</head>
+
+<body>
+  <nav class="g-navbar">
+      <div class="container d-flex justify-content-between">
+          <img src="./assets/logo.svg" alt="gclout branding" class="g-nav-brand">
+          <div class="g-nav-menu d-flex justify-content-between">
+              <div class="input-group blue">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="material-icons">search</i></span>
+                </div>
+                <input type="text" class="form-control" required placeholder="Type to search">
+              </div>
+              <ul class="g-nav-menu-list">
+                <li class="g-nav-menu-item">
+                  <i class="material-icons">
+                    notifications
+                  </i>
+                </li>
+                <li class="g-nav-menu-item">
+                    <div class="dropdown">
+                      <div class="profile-image-wrapper">
+                        <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" class="profile-image">
+                      </div>
+                        <button class="btn btn-profile dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Account
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                      </div>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="app-wrapper">
+    <aside class="sidebar">
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item">
+          <a href="index.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Overview
+          </a>
+        </li>
+        <li class="sidebar-menu-item active">
+          <a href="users.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Users
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="politicians.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Political Officers
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="index.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Notifications
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section class="main-app">
+        <div class="d-md-flex justify-content-between">
+            <div class="d-flex align-content-center">
+                <h3 class="pr-4 align-self-center">Users</h3>
+                <p class="pl-4 align-self-center mb-0 pr-4">2000 Total</p>
+                <div class="dropdown">
+                    <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort By:  First Name
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">First Name</a>
+                        <a class="dropdown-item" href="#">Last Name</a>
+                        <a class="dropdown-item" href="#">Year</a>
+                        <a class="dropdown-item" href="#">Date Requiested</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="btn bg-white d-flex align-content-center mr-3">
+                    <i class="material-icons mr-2">
+                        filter_list
+                    </i>
+                    Filter
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-dropdown bg-blue d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                        <i class="material-icons ml-1">
+                            more_vert
+                        </i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="btn-dropdown btn">Activate Account</button>
+                        <button class="btn-dropdown btn">Deactivate Account</button>
+                        <button class="btn-dropdown btn">Delete Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex user-cards-container">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class=" user-card bg-white">
+                    <div class="user-card-details">
+                        <div class="user-card-image-wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="user-card" class="user-card-image">
+                        </div>
+                        <div>
+                            <p>Michelle Hestonv</p>
+                            <p class="text-muted">MichelleHeston@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="user-card-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown p-0 pb-1 d-flex align-content-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">
+                                    more_vert
+                                </i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button class="btn-dropdown btn">Activate Account</button>
+                                <button class="btn-dropdown btn">Deactivate Account</button>
+                                <button class="btn-dropdown btn">View Profile</button>
+                            </div>
+                        </div>
+                        <label class="control control-checkbox ml-1">
+                            <input type="checkbox"/>
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 pr-3">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">15</a></li>
+                    <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+  </div>
+  <footer class="footer my-auto">
+    <p class="text-center">Copyright © 2018 GClout. All Rights Reserved.</p>
+  </footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./assets/main.js"></script>
+
+</html>
