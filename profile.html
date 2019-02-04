@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="./assets/logo.svg">
+  <meta name="description" content="Governance Clout is a platform for nigerians to give their takes and opinions on their government and how they are governed. It is open for all types of users. GClout gives your direct access to the government officials that you have elected">
+  <meta name="keywords" content="Government, Nigeria, Opinion, GClout">
+  <meta name="author" content="staybusy.ng">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#00B0F0">
+  <meta name="og:title" property="og:title" content="Governance Clout | Coming soon">
+  <meta name="og:description" property="og:title" content="Governance Clout is a social networking site for everyone (starting from Nigerians) to socialize, contribute and give opinions on governance at all levels. It is open for all type of users. GClout gives you direct access to the government officials that you have elected.">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>GClout | Admin</title>
+</head>
+
+<body>
+  <nav class="g-navbar">
+      <div class="container d-flex justify-content-between">
+          <img src="./assets/logo.svg" alt="gclout branding" class="g-nav-brand">
+          <div class="g-nav-menu d-flex justify-content-between">
+              <div class="input-group blue">
+                <div class="input-group-append">
+                    <span class="input-group-text"><i class="material-icons">search</i></span>
+                </div>
+                <input type="text" class="form-control" required placeholder="Type to search">
+              </div>
+              <ul class="g-nav-menu-list">
+                <li class="g-nav-menu-item">
+                  <i class="material-icons">
+                    notifications
+                  </i>
+                </li>
+                <li class="g-nav-menu-item">
+                    <div class="dropdown">
+                      <div class="profile-image-wrapper">
+                        <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" class="profile-image">
+                      </div>
+                        <button class="btn btn-profile dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Account
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                      </div>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="app-wrapper">
+    <aside class="sidebar">
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu-item">
+          <a href="index.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Overview
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="users.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Users
+          </a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="politicians.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Political Officers
+          </a>
+        </li>
+        <li class="sidebar-menu-item active">
+          <a href="notification-list.html">
+            <i class="material-icons">
+              trip_origin
+            </i>
+            Notifications
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section class="main-app">
+        <div class="d-md-flex justify-content-between">
+            <div class="d-flex align-content-center">
+                <h3 class="pr-4 align-self-center">User profile</h3>
+            </div>
+        </div>
+        <div>
+            <div class="profile_cover_photo_wrapper">
+                <img src="./assets/cover.jpg" alt="cover" class="profile_cover_photo_image">
+            </div>
+            <div class="bg-white">
+                <div class="image_and_actions">
+                    <div class="user_profile_picture_wrapper offset-1">
+                        <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="">
+                    </div>
+                    <div class="profile_actions">
+                        <button class="btn btn-gclout-blue mt-0 btn-rounded">Save</button>
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown dropdown-toggle btn-gclout-blue-outline" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Upgrade
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">President</a>
+                                <a class="dropdown-item" href="#">Governor</a>
+                                <a class="dropdown-item" href="#">Senator</a>
+                                <a class="dropdown-item" href="#">COuncilor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user_profile_details">
+                    <div class="user_bio text-center">
+                        <h3>Adewale Adenuga</h3>
+                        <div class="d-flex no-gutters">
+                            <div class="col-3 offset-1">
+                                <p>Friends</p>
+                                <h3 class="color-dark">300</h3>
+                            </div>
+                            <div class="col-3">
+                                <p>Clouts</p>
+                                <h3 class="color-dark">300</h3>
+                            </div>
+                            <div class="col-3">
+                                <p>Followers</p>
+                                <h3 class="color-dark">300</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <h5 class="color-dark">Contact Information</h5>
+                        <div class="mb-1">
+                            <p><strong>Email Address</strong></p>
+                            <p>ogbeniore@staybusy.ng</p>
+                        </div>
+                        <div class="mb-1">
+                            <p><strong>Phone Number</strong></p>
+                            <p>08138293829</p>
+                        </div>
+                    </div>
+                    <div class="other_information">
+                        <h5 class="color-dark">Other Information</h5>
+                        <div class="mb-1">
+                            <p><strong>Nationality</strong></p>
+                            <p>Nigeria</p>
+                        </div>
+                        <div class="mb-1">
+                            <p><strong>Lga</strong></p>
+                            <p>Alimosho</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-grey">
+                <p class="color-dark">Political Office Holders</p>
+                <div class="politicians_list">
+                    <div class="politicians_list_item">
+                        <div class="politicians_picture_wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="Politician">
+                        </div>
+                        <p>
+                            <strong>Mark Spencer</strong>
+                        </p>
+                        <p>President</p>
+                    </div>
+                    <div class="politicians_list_item">
+                        <div class="politicians_picture_wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="Politician">
+                        </div>
+                        <p>
+                            <strong>Mark Spencer</strong>
+                        </p>
+                        <p>President</p>
+                    </div>
+                    <div class="politicians_list_item">
+                        <div class="politicians_picture_wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="Politician">
+                        </div>
+                        <p>
+                            <strong>Mark Spencer</strong>
+                        </p>
+                        <p>President</p>
+                    </div>
+                    <div class="politicians_list_item">
+                        <div class="politicians_picture_wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="Politician">
+                        </div>
+                        <p>
+                            <strong>Mark Spencer</strong>
+                        </p>
+                        <p>President</p>
+                    </div>
+                    <div class="politicians_list_item">
+                        <div class="politicians_picture_wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="Politician">
+                        </div>
+                        <p>
+                            <strong>Mark Spencer</strong>
+                        </p>
+                        <p>President</p>
+                    </div>
+                    <div class="politicians_list_item">
+                        <div class="politicians_picture_wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="Politician">
+                        </div>
+                        <p>
+                            <strong>Mark Spencer</strong>
+                        </p>
+                        <p>President</p>
+                    </div>
+                    <div class="politicians_list_item">
+                        <div class="politicians_picture_wrapper">
+                            <img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1540898186/profile_eyjfnd.jpg" alt="Politician">
+                        </div>
+                        <p>
+                            <strong>Mark Spencer</strong>
+                        </p>
+                        <p>President</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+  <footer class="footer my-auto">
+    <p class="text-center">Copyright © 2018 GClout. All Rights Reserved.</p>
+  </footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./assets/main.js"></script>
+
+</html>
